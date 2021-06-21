@@ -27,16 +27,4 @@ public class AuthFilter extends HttpFilter {
             res.sendRedirect("/login");
         }
     }
-
-//
-//
-//        if (session.getAttribute("loggedUser") != null) {
-//            // w sesji jest atrybut o nazwie username, czyli ktoś się wcześniej zalogował
-//            chain.doFilter(req, res);
-//        } else {
-//            // nie ma w sesji informacji, że ktoś się zalogował, więc robimy przekierowanie
-//            // na formularz logowania
-//            res.sendRedirect("/login");
-//        }
-//    }
 }
